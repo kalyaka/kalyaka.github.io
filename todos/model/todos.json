@@ -1,0 +1,19 @@
+{
+  "newTodoTitle": "",
+  "todos": [
+    {
+      "title": "Start this app",
+      "completed": true
+    },
+    {
+      "title": "Learn OpenUI5",
+      "completed": false
+    },
+    {
+      "title": "Implement Todos app",
+      "completed": false
+    }
+  ],
+  "todosRemovable": true,
+  "todosCount": 1
+}

@@ -9,15 +9,6 @@
     "description": "{{appDescription}}",
     "applicationVersion": {
       "version": "0.9.0"
-    },
-    "dataSources": {
-      "documentRemote": {
-        "uri": "/sap/opu/odata/SAP/ZTEST_GW_SRV/",
-        "type": "OData",
-        "settings": {
-          "odataVersion": "2.0"
-        }
-      }
     }
   },
   "sap.ui": {
@@ -58,9 +49,6 @@
           "bundleName": "com.kalyaka.test.i18n.i18n"
         }
       },
-      "document": {
-        "dataSource": "documentRemote"
-      },
       "todosModel": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/todos.json"
@@ -83,28 +71,12 @@
       },
       "routes": [
         {
-          "pattern": "o",
-          "name": "overview",
-          "target": "overview"
-        },
-        {
-          "pattern": "detail/{documentPath}",
-          "name": "detail",
-          "target": "detail"
-        },
-        {
           "pattern": "",
           "name": "todos",
           "target": "todos"
         }
       ],
       "targets": {
-        "overview": {
-          "viewName": "Overview"
-        },
-        "detail": {
-          "viewName": "Detail"
-        },
         "todos": {
           "viewName": "Todos"
         }
