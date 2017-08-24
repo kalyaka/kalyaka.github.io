@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="http://localhost:8000/1.44.18/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m, sap.ui.layout"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-preload="async"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-resourceroots='{"com.kalyaka.test": ""}'>
+    </script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            "use strict";
+
+            new sap.m.Shell({
+                app: new sap.ui.core.ComponentContainer({
+                    name: "com.kalyaka.test",
+                    height: "100%"
+                })
+            }).placeAt("content");
+        });
+    </script>
+</head>
+<body class="sapUiBody" id="content">
+</body>
+</html>
