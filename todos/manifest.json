@@ -1,0 +1,114 @@
+{
+  "_version": "0.9.0",
+  "sap.app": {
+    "_version": "0.9.0",
+    "id": "com.kalyaka.test",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "0.9.0"
+    },
+    "dataSources": {
+      "documentRemote": {
+        "uri": "/sap/opu/odata/SAP/ZTEST_GW_SRV/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "_version": "0.9.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_belize",
+      "sap_bluecrystal"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "0.9.0",
+    "dependencies": {
+      "minUI5Version": "1.40",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "rootView": {
+      "viewName": "com.kalyaka.test.view.App",
+      "type": "XML",
+      "id": "app"
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.kalyaka.test.i18n.i18n"
+        }
+      },
+      "document": {
+        "dataSource": "documentRemote"
+      },
+      "todosModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/todos.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "com.kalyaka.test.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [
+        {
+          "pattern": "o",
+          "name": "overview",
+          "target": "overview"
+        },
+        {
+          "pattern": "detail/{documentPath}",
+          "name": "detail",
+          "target": "detail"
+        },
+        {
+          "pattern": "",
+          "name": "todos",
+          "target": "todos"
+        }
+      ],
+      "targets": {
+        "overview": {
+          "viewName": "Overview"
+        },
+        "detail": {
+          "viewName": "Detail"
+        },
+        "todos": {
+          "viewName": "Todos"
+        }
+      }
+    }
+  }
+}
