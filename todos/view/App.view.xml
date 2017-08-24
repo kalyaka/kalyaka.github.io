@@ -1,0 +1,8 @@
+<mvc:View xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc"
+          controllerName="com.kalyaka.test.controller.App"
+          displayBlock="true">
+    <Shell>
+        <App id="app"></App>
+    </Shell>
+</mvc:View>

@@ -1,9 +1,8 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
     "sap/ui/model/json/JSONModel",
-    "com/kalyaka/test/controller/HelloDialog",
     "sap/ui/Device"
-], function (UIComponent, JSONModel, HelloDialog, Device) {
+], function (UIComponent, JSONModel, Device) {
     "use strict";
 
     return UIComponent.extend("com.kalyaka.test.Component", {
@@ -23,14 +22,12 @@ sap.ui.define([
             let oModel = new JSONModel(oData);
             this.setModel(oModel);
 
-            this._helloDialog = new HelloDialog(this.getAggregation("rootControl"));
-
             this.getRouter().initialize();
 
             let oDeviceModel = new JSONModel(Device);
             oDeviceModel.setDefaultBindingMode("OneWay");
             this.setModel(oDeviceModel, "device");
-        },
+        }
 
         // getContentDensityClass: function () {
         //     if (!this._contentDensityClass) {
@@ -42,10 +39,6 @@ sap.ui.define([
         //     }
         //     return this._contentDensityClass;
         // },
-
-        openHelloDialog: function () {
-            this._helloDialog.open();
-        }
     });
 });
 
