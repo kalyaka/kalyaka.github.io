@@ -9,4 +9,9 @@
 
 .todoListInput input:disabled {
     text-decoration: line-through;
+    border: 0px;
+}
+
+.todoListInput input:enabled {
+    border: 0px;
 }
