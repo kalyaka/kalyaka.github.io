@@ -1,0 +1,93 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=CA, L=San Francisco, O=kalyaka.me, OU=kalyaka.me Certificate Authority, CN=kalyaka.me CA
+        Validity
+            Not Before: Sep 14 20:25:25 2014 GMT
+            Not After : Sep 13 20:25:25 2024 GMT
+        Subject: C=US, ST=CA, L=San Francisco, O=kalyaka.me, OU=kalyaka.me Certificate Authority, CN=kalyaka.me TLS CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b1:51:46:bf:7b:29:21:a0:77:8f:6c:38:19:27:
+                    0e:b7:47:92:b5:f6:1d:ab:2e:c0:44:d9:ad:ba:bc:
+                    a1:e1:db:86:c2:86:7e:ea:90:d0:85:82:67:90:11:
+                    5b:80:69:be:97:b8:40:24:92:8c:d9:2f:e8:91:e8:
+                    1f:c5:5e:12:c5:c3:31:05:3c:0d:3b:20:c8:72:d6:
+                    3c:15:fd:75:f2:57:89:73:4c:2e:68:2d:e7:6c:7c:
+                    21:3b:04:b5:5c:37:03:c4:16:f0:44:bd:63:8e:c5:
+                    4b:08:f0:5b:47:9a:fb:60:f5:4f:de:db:49:86:75:
+                    f4:4f:bf:87:31:53:cb:63:05:1b:16:ec:a9:c3:62:
+                    c1:dd:6e:4f:20:0f:69:4f:96:47:f8:38:df:f0:14:
+                    06:2e:5a:f8:1e:a8:14:c7:8c:c5:00:03:c4:5b:12:
+                    02:24:81:60:30:98:4f:95:38:7f:29:7e:79:4a:4c:
+                    b8:68:2e:2a:d6:76:4a:0c:d5:52:70:94:72:f6:29:
+                    88:05:9a:78:f3:f3:42:85:2c:ba:29:0a:df:5d:27:
+                    be:7b:7b:72:fa:bc:29:70:ff:fc:96:41:8d:ee:24:
+                    a7:fe:2b:a8:09:b0:5c:8f:a4:55:5e:5b:26:4f:c0:
+                    96:08:6c:f7:f5:46:3d:16:15:95:dd:17:e4:b5:5e:
+                    1d:1d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                90:A5:76:C3:29:C1:24:26:93:32:5E:98:2A:3B:49:56:C6:06:DF:E3
+            X509v3 Authority Key Identifier: 
+                keyid:1F:E8:81:2D:90:40:9A:C6:E5:3F:F4:C1:B7:4E:E3:0D:D1:7E:3B:C0
+
+            Authority Information Access: 
+                CA Issuers - URI:http://pki.kalyaka.me/ca/root-ca.cer
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.kalyaka.me/ca/root-ca.crl
+
+    Signature Algorithm: sha256WithRSAEncryption
+         9e:98:39:05:86:2e:9b:d2:22:95:83:4a:fd:76:eb:73:e3:b7:
+         38:7c:58:96:42:34:82:46:85:5e:09:f5:a3:89:7d:f2:d7:02:
+         f3:ac:14:cc:d1:26:a7:31:87:5c:84:1b:99:20:a8:78:5e:8d:
+         f8:6e:7c:2b:45:bd:00:4b:ac:5f:b2:74:3a:ee:03:90:7f:8a:
+         06:70:3b:8c:87:6e:93:1f:e8:77:a3:ea:b7:9b:f0:22:ff:4a:
+         bf:c5:8b:f5:12:3a:d2:03:d0:ec:f3:bf:91:88:ab:6f:9e:97:
+         96:7e:16:5c:9b:d3:7c:35:fd:96:c8:a8:ae:0d:57:5d:cf:e0:
+         4f:eb:d0:5a:1e:3c:5c:a4:9e:ae:c2:61:e4:5c:03:cd:0e:92:
+         91:b4:59:d6:fe:3a:fe:33:2e:83:5b:b6:3f:9e:46:51:fe:c5:
+         33:be:4a:40:9a:fa:18:92:0e:b8:1f:82:6f:db:d6:45:7f:5b:
+         27:6e:74:64:fd:a1:70:60:af:3a:32:ad:18:0e:aa:42:f8:9f:
+         72:37:72:54:fa:25:b8:2c:4e:b8:ed:4b:5c:5b:2a:f5:4b:29:
+         fd:95:98:93:71:d2:30:57:a6:94:d4:56:a5:f1:a6:41:6b:f5:
+         2f:32:07:50:1d:a0:f2:ef:d9:5e:78:1e:d0:9c:0f:62:50:c8:
+         02:41:a7:87
+-----BEGIN CERTIFICATE-----
+MIIEdjCCA16gAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBijELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgMAkNBMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMRMwEQYDVQQKDApr
+YWx5YWthLm1lMSkwJwYDVQQLDCBrYWx5YWthLm1lIENlcnRpZmljYXRlIEF1dGhv
+cml0eTEWMBQGA1UEAwwNa2FseWFrYS5tZSBDQTAeFw0xNDA5MTQyMDI1MjVaFw0y
+NDA5MTMyMDI1MjVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECAwCQ0ExFjAUBgNV
+BAcMDVNhbiBGcmFuY2lzY28xEzARBgNVBAoMCmthbHlha2EubWUxKTAnBgNVBAsM
+IGthbHlha2EubWUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MRowGAYDVQQDDBFrYWx5
+YWthLm1lIFRMUyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALFR
+Rr97KSGgd49sOBknDrdHkrX2HasuwETZrbq8oeHbhsKGfuqQ0IWCZ5ARW4Bpvpe4
+QCSSjNkv6JHoH8VeEsXDMQU8DTsgyHLWPBX9dfJXiXNMLmgt52x8ITsEtVw3A8QW
+8ES9Y47FSwjwW0ea+2D1T97bSYZ19E+/hzFTy2MFGxbsqcNiwd1uTyAPaU+WR/g4
+3/AUBi5a+B6oFMeMxQADxFsSAiSBYDCYT5U4fyl+eUpMuGguKtZ2SgzVUnCUcvYp
+iAWaePPzQoUsuikK310nvnt7cvq8KXD//JZBje4kp/4rqAmwXI+kVV5bJk/Alghs
+9/VGPRYVld0X5LVeHR0CAwEAAaOB4DCB3TAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0T
+AQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUkKV2wynBJCaTMl6YKjtJVsYG3+MwHwYD
+VR0jBBgwFoAUH+iBLZBAmsblP/TBt07jDdF+O8AwQAYIKwYBBQUHAQEENDAyMDAG
+CCsGAQUFBzAChiRodHRwOi8vcGtpLmthbHlha2EubWUvY2Evcm9vdC1jYS5jZXIw
+NQYDVR0fBC4wLDAqoCigJoYkaHR0cDovL3BraS5rYWx5YWthLm1lL2NhL3Jvb3Qt
+Y2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCemDkFhi6b0iKVg0r9dutz47c4fFiW
+QjSCRoVeCfWjiX3y1wLzrBTM0SanMYdchBuZIKh4Xo34bnwrRb0AS6xfsnQ67gOQ
+f4oGcDuMh26TH+h3o+q3m/Ai/0q/xYv1EjrSA9Ds87+RiKtvnpeWfhZcm9N8Nf2W
+yKiuDVddz+BP69BaHjxcpJ6uwmHkXAPNDpKRtFnW/jr+My6DW7Y/nkZR/sUzvkpA
+mvoYkg64H4Jv29ZFf1snbnRk/aFwYK86Mq0YDqpC+J9yN3JU+iW4LE647UtcWyr1
+Syn9lZiTcdIwV6aU1Fal8aZBa/UvMgdQHaDy79leeB7QnA9iUMgCQaeH
+-----END CERTIFICATE-----
